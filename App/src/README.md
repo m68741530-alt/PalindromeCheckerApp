@@ -1,47 +1,40 @@
-# Palindrome Checker Management System
+# Palindrome Checker App – Use Case 3
 
-## Objective
+## 📌 Objective
+This Java console application checks whether a given string is a palindrome by reversing the string and comparing it with the original.
 
-Create a simple Java console application that checks palindromes.
-UC1 focuses on displaying the application welcome message and version when the program starts.
+---
 
-## Use Case 1: Application Entry & Welcome Message
+## 🚀 Features
+- Takes input from the user
+- Reverses the string using a loop
+- Compares original and reversed strings
+- Displays the result
 
-**Goal:** Display the application name and version at startup.
+---
 
-**Flow:**
+## 🧠 Concepts Used
+- For Loop
+- String Immutability
+- String Concatenation (+)
+- equals() Method
 
-1. Program starts.
-2. JVM calls the `main()` method.
-3. `displayWelcomeMessage()` prints the application name and version.
-4. System initialization message is shown.
+---
 
-## Concepts Used
+## 🛠️ How to Compile and Run
 
-* Class
-* Main Method
-* Static Keyword
-* Constants (`static final`)
-* Console Output (`System.out.println`)
+### Step 1: Compile
+javac UseCase3PalindromeCheckerApp.java
 
-## How to Run
+### Step 2: Run
+java UseCase3PalindromeCheckerApp
 
-Compile:
+---
 
-```bash
-javac App.java
-```
+## 💡 Example
 
-Run:
+Input:
+Enter a string: madam
 
-```bash
-java App
-```
-
-## Sample Output
-
-```
-Welcome to the Palindrome Checker Management System
-Version : 1.0
-System initialized successfully.
-```
+Output:
+The given string is a Palindrome.
