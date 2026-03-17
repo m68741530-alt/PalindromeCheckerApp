@@ -1,40 +1,40 @@
-# Palindrome Checker App – Use Case 3
+# Palindrome Checker App – Use Case 4
 
 ## 📌 Objective
-This Java console application checks whether a given string is a palindrome by reversing the string and comparing it with the original.
+This Java console application checks whether a given string is a palindrome by converting it into a character array and using a two-pointer technique.
 
 ---
 
 ## 🚀 Features
-- Takes input from the user
-- Reverses the string using a loop
-- Compares original and reversed strings
-- Displays the result
+- Accepts user input
+- Converts string into a character array
+- Uses two-pointer technique for comparison
+- Efficiently checks palindrome without creating extra strings
 
 ---
 
 ## 🧠 Concepts Used
-- For Loop
-- String Immutability
-- String Concatenation (+)
-- equals() Method
+- Character Array (char[])
+- Array Indexing
+- Two-Pointer Technique
+- Time Complexity Optimization
 
 ---
 
 ## 🛠️ How to Compile and Run
 
 ### Step 1: Compile
-javac UseCase3PalindromeCheckerApp.java
+javac UseCase4PalindromeCheckerApp.java
 
 ### Step 2: Run
-java UseCase3PalindromeCheckerApp
+java UseCase4PalindromeCheckerApp
 
 ---
 
 ## 💡 Example
 
 Input:
-Enter a string: madam
+Enter a string: level
 
 Output:
 The given string is a Palindrome.
