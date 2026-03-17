@@ -1,40 +1,40 @@
-# Palindrome Checker App – Use Case 9
+# Palindrome Checker App – Use Case 10
 
 ## 📌 Objective
-This Java console application checks whether a given string is a palindrome using recursion.
+This Java console application checks whether a given string is a palindrome while ignoring spaces and case sensitivity.
 
 ---
 
 ## 🚀 Features
-- Uses recursive function calls
-- Compares characters from start and end
-- Stops using base condition
-- Efficient and clean logic
+- Ignores spaces in input
+- Ignores uppercase/lowercase differences
+- Uses efficient two-pointer comparison
+- Clean and user-friendly output
 
 ---
 
 ## 🧠 Concepts Used
-- Recursion
-- Base Condition
-- Call Stack
-- String Traversal
+- String Preprocessing
+- Regular Expressions (replaceAll)
+- Two-Pointer Technique
+- Case Conversion
 
 ---
 
 ## 🛠️ How to Compile and Run
 
 ### Step 1: Compile
-javac UseCase9PalindromeCheckerApp.java
+javac UseCase10PalindromeCheckerApp.java
 
 ### Step 2: Run
-java UseCase9PalindromeCheckerApp
+java UseCase10PalindromeCheckerApp
 
 ---
 
 ## 💡 Example
 
 Input:
-Enter a string: level
+Enter a string: A man a plan a canal Panama
 
 Output:
-The given string is a Palindrome.
+The given string is a Palindrome (ignoring spaces and case).
