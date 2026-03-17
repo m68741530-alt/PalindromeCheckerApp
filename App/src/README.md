@@ -1,40 +1,40 @@
-# Palindrome Checker App – Use Case 8
+# Palindrome Checker App – Use Case 9
 
 ## 📌 Objective
-This Java console application checks whether a given string is a palindrome using a Singly Linked List.
+This Java console application checks whether a given string is a palindrome using recursion.
 
 ---
 
 ## 🚀 Features
-- Converts string into a linked list
-- Uses fast and slow pointer technique to find the middle
-- Reverses second half in-place
-- Compares both halves efficiently
+- Uses recursive function calls
+- Compares characters from start and end
+- Stops using base condition
+- Efficient and clean logic
 
 ---
 
 ## 🧠 Concepts Used
-- Singly Linked List
-- Node Traversal
-- Fast and Slow Pointer Technique
-- In-place Reversal
+- Recursion
+- Base Condition
+- Call Stack
+- String Traversal
 
 ---
 
 ## 🛠️ How to Compile and Run
 
 ### Step 1: Compile
-javac UseCase8PalindromeCheckerApp.java
+javac UseCase9PalindromeCheckerApp.java
 
 ### Step 2: Run
-java UseCase8PalindromeCheckerApp
+java UseCase9PalindromeCheckerApp
 
 ---
 
 ## 💡 Example
 
 Input:
-Enter a string: radar
+Enter a string: level
 
 Output:
 The given string is a Palindrome.
