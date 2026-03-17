@@ -1,56 +1,57 @@
-# Palindrome Checker App – Use Case 12
+# Palindrome Checker App – Use Case 13
 
 ## 📌 Objective
-This Java application demonstrates the Strategy Design Pattern by allowing dynamic selection of different palindrome checking algorithms at runtime.
+This Java application compares the performance of different palindrome checking algorithms by measuring execution time.
 
 ---
 
 ## 🚀 Features
-- Supports multiple palindrome checking strategies
-- Dynamic algorithm selection at runtime
-- Clean and extensible design
-- Demonstrates advanced OOP concepts
+- Runs multiple palindrome algorithms
+- Measures execution time using System.nanoTime()
+- Displays comparison results
+- Helps understand performance differences
 
 ---
 
 ## 🧠 Concepts Used
-- Interface
-- Polymorphism
-- Strategy Design Pattern
-- Runtime behavior selection
+- System.nanoTime()
+- Algorithm Comparison
+- Performance Benchmarking
+- Multiple Approaches (Reverse, Two Pointer, Stack)
 
 ---
 
 ## 🛠️ How to Compile and Run
 
 ### Step 1: Compile
-javac UseCase12PalindromeCheckerApp.java
+javac UseCase13PalindromeCheckerApp.java
 
 ### Step 2: Run
-java UseCase12PalindromeCheckerApp
+java UseCase13PalindromeCheckerApp
 
 ---
 
 ## 💡 Example
 
 Input:
-Enter a string: level  
-Choose Strategy:
-1. Stack
-2. Deque
+Enter a string: madam
 
 Output:
-The given string is a Palindrome.
+=== Results ===
+Reverse Method: true | Time: 50000 ns
+Two Pointer Method: true | Time: 20000 ns
+Stack Method: true | Time: 30000 ns
 
 ---
 
-## 📌 Strategies Implemented
-- Stack Strategy (LIFO based reversal)
-- Deque Strategy (front-rear comparison)
+## 📊 Insights
+- Two Pointer method is usually fastest
+- String concatenation is slower due to immutability
+- Stack introduces extra overhead
 
 ---
 
-## 📊 Use Cases
-- Flexible algorithm selection systems
-- Pluggable architecture design
-- Real-world strategy pattern implementation
+## 📌 Use Cases
+- Performance benchmarking
+- Algorithm comparison studies
+- Interview preparation
