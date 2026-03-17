@@ -1,40 +1,40 @@
-# Palindrome Checker App – Use Case 10
+# Palindrome Checker App – Use Case 11
 
 ## 📌 Objective
-This Java console application checks whether a given string is a palindrome while ignoring spaces and case sensitivity.
+This Java console application checks whether a string is a palindrome using an Object-Oriented approach by encapsulating the logic inside a separate class.
 
 ---
 
 ## 🚀 Features
-- Ignores spaces in input
-- Ignores uppercase/lowercase differences
-- Uses efficient two-pointer comparison
-- Clean and user-friendly output
+- Encapsulates palindrome logic in a separate class
+- Clean and reusable design
+- Follows OOP principles
+- Simple and efficient comparison logic
 
 ---
 
 ## 🧠 Concepts Used
-- String Preprocessing
-- Regular Expressions (replaceAll)
-- Two-Pointer Technique
-- Case Conversion
+- Encapsulation
+- Single Responsibility Principle
+- Class and Object usage
+- Method abstraction
 
 ---
 
 ## 🛠️ How to Compile and Run
 
 ### Step 1: Compile
-javac UseCase10PalindromeCheckerApp.java
+javac UseCase11PalindromeCheckerApp.java
 
 ### Step 2: Run
-java UseCase10PalindromeCheckerApp
+java UseCase11PalindromeCheckerApp
 
 ---
 
 ## 💡 Example
 
 Input:
-Enter a string: A man a plan a canal Panama
+Enter a string: madam
 
 Output:
-The given string is a Palindrome (ignoring spaces and case).
+The given string is a Palindrome.
