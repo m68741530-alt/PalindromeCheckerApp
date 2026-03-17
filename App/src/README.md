@@ -1,39 +1,40 @@
-# Palindrome Checker App – Use Case 7
+# Palindrome Checker App – Use Case 8
 
 ## 📌 Objective
-This Java console application checks whether a given string is a palindrome using a Deque (Double Ended Queue) for optimized comparison.
+This Java console application checks whether a given string is a palindrome using a Singly Linked List.
 
 ---
 
 ## 🚀 Features
-- Accepts user input
-- Uses Deque for efficient front and rear comparison
-- Eliminates need for additional data structures
-- Displays palindrome result
+- Converts string into a linked list
+- Uses fast and slow pointer technique to find the middle
+- Reverses second half in-place
+- Compares both halves efficiently
 
 ---
 
 ## 🧠 Concepts Used
-- Deque (Double Ended Queue)
-- Front and Rear Operations
-- Optimized Comparison Technique
+- Singly Linked List
+- Node Traversal
+- Fast and Slow Pointer Technique
+- In-place Reversal
 
 ---
 
 ## 🛠️ How to Compile and Run
 
 ### Step 1: Compile
-javac UseCase7PalindromeCheckerApp.java
+javac UseCase8PalindromeCheckerApp.java
 
 ### Step 2: Run
-java UseCase7PalindromeCheckerApp
+java UseCase8PalindromeCheckerApp
 
 ---
 
 ## 💡 Example
 
 Input:
-Enter a string: madam
+Enter a string: radar
 
 Output:
 The given string is a Palindrome.
