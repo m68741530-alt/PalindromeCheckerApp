@@ -1,40 +1,41 @@
-# Palindrome Checker App – Use Case 5
+# Palindrome Checker App – Use Case 6
 
 ## 📌 Objective
-This Java console application checks whether a given string is a palindrome using a Stack data structure.
+This Java console application checks whether a given string is a palindrome using both Stack and Queue data structures, demonstrating LIFO and FIFO behavior.
 
 ---
 
 ## 🚀 Features
-- Takes user input from the console
-- Uses Stack to reverse the string
-- Compares original and reversed characters
-- Displays whether the string is a palindrome
+- Accepts user input
+- Uses Stack (LIFO) and Queue (FIFO)
+- Compares characters using pop and dequeue operations
+- Displays palindrome result
 
 ---
 
 ## 🧠 Concepts Used
-- Stack (LIFO Principle)
-- Push Operation
-- Pop Operation
-- Reversal using Stack
+- Stack (Last In First Out)
+- Queue (First In First Out)
+- Push & Pop Operations (Stack)
+- Enqueue & Dequeue Operations (Queue)
+- Logical Comparison of outputs
 
 ---
 
 ## 🛠️ How to Compile and Run
 
 ### Step 1: Compile
-javac UseCase5PalindromeCheckerApp.java
+javac UseCase6PalindromeCheckerApp.java
 
 ### Step 2: Run
-java UseCase5PalindromeCheckerApp
+java UseCase6PalindromeCheckerApp
 
 ---
 
 ## 💡 Example
 
 Input:
-Enter a string: radar
+Enter a string: level
 
 Output:
 The given string is a Palindrome.
