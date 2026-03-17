@@ -1,19 +1,35 @@
 import java.util.*;
 
-// Strategy Interface
-interface PalindromeStrategy {
-    boolean checkPalindrome(String input);
-}
+public class Main {
 
-// Stack आधारित Strategy
-class StackStrategy implements PalindromeStrategy {
-    public boolean checkPalindrome(String input) {
+    // Method 1: String Reverse
+    public static boolean reverseMethod(String input) {
+        String reversed = "";
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reversed += input.charAt(i);
+        }
+        return input.equals(reversed);
+    }
+
+    // Method 2: Two Pointer
+    public static boolean twoPointerMethod(String input) {
+        int start = 0, end = input.length() - 1;
+        while (start < end) {
+            if (input.charAt(start) != input.charAt(end)) {
+                return false;
+            }
+            start++;
+            end--;
+        }
+        return true;
+    }
+
+    // Method 3: Stack
+    public static boolean stackMethod(String input) {
         Stack<Character> stack = new Stack<>();
-
         for (char ch : input.toCharArray()) {
             stack.push(ch);
         }
-
         for (int i = 0; i < input.length(); i++) {
             if (input.charAt(i) != stack.pop()) {
                 return false;
@@ -21,45 +37,6 @@ class StackStrategy implements PalindromeStrategy {
         }
         return true;
     }
-}
-
-// Deque आधारित Strategy
-class DequeStrategy implements PalindromeStrategy {
-    public boolean checkPalindrome(String input) {
-        Deque<Character> deque = new LinkedList<>();
-
-        for (char ch : input.toCharArray()) {
-            deque.addLast(ch);
-        }
-
-        while (deque.size() > 1) {
-            if (deque.removeFirst() != deque.removeLast()) {
-                return false;
-            }
-        }
-        return true;
-    }
-}
-
-// Context class
-class PalindromeContext {
-    private PalindromeStrategy strategy;
-
-    public PalindromeContext(PalindromeStrategy strategy) {
-        this.strategy = strategy;
-    }
-
-    public void setStrategy(PalindromeStrategy strategy) {
-        this.strategy = strategy;
-    }
-
-    public boolean executeStrategy(String input) {
-        return strategy.checkPalindrome(input);
-    }
-}
-
-// Main Application
-public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -67,27 +44,29 @@ public class Main {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
-        System.out.println("Choose Strategy:");
-        System.out.println("1. Stack");
-        System.out.println("2. Deque");
+        // Reverse Method Timing
+        long startTime = System.nanoTime();
+        boolean result1 = reverseMethod(input);
+        long endTime = System.nanoTime();
+        long time1 = endTime - startTime;
 
-        int choice = scanner.nextInt();
+        // Two Pointer Timing
+        startTime = System.nanoTime();
+        boolean result2 = twoPointerMethod(input);
+        endTime = System.nanoTime();
+        long time2 = endTime - startTime;
 
-        PalindromeStrategy strategy;
+        // Stack Method Timing
+        startTime = System.nanoTime();
+        boolean result3 = stackMethod(input);
+        endTime = System.nanoTime();
+        long time3 = endTime - startTime;
 
-        if (choice == 1) {
-            strategy = new StackStrategy();
-        } else {
-            strategy = new DequeStrategy();
-        }
-
-        PalindromeContext context = new PalindromeContext(strategy);
-
-        if (context.executeStrategy(input)) {
-            System.out.println("The given string is a Palindrome.");
-        } else {
-            System.out.println("The given string is NOT a Palindrome.");
-        }
+        // Display results
+        System.out.println("\n=== Results ===");
+        System.out.println("Reverse Method: " + result1 + " | Time: " + time1 + " ns");
+        System.out.println("Two Pointer Method: " + result2 + " | Time: " + time2 + " ns");
+        System.out.println("Stack Method: " + result3 + " | Time: " + time3 + " ns");
 
         scanner.close();
     }
